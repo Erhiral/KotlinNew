@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/li_textlogin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:background="@color/toolbar_color"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/Register"
+            android:textAllCaps="true"
+            android:textColor="@color/whitebtn"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold" />
+    </com.google.android.material.appbar.MaterialToolbar>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/add_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:background="@drawable/curve_edittext"
+        android:backgroundTint="@color/toolbar_color"
+        android:text="Add Register"
+        android:textAllCaps="false"
+        android:textColor="@color/whitebtn"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintTop_toBottomOf="@+id/li_textlogin"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="@dimen/_20sdp"
+        android:id="@+id/rv_register_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/add_register">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

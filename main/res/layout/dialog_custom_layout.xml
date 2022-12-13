@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    >
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/li_textlogin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:background="@color/toolbar_color"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="UPDATE"
+            android:textAllCaps="true"
+            android:textColor="@color/whitebtn"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold" />
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/li_textlogin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_chainStyle="packed">
+
+
+        <!--    <de.hdodenhof.circleimageview.CircleImageView-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:id="@+id/profilepic"-->
+        <!--        android:scaleType="fitCenter"-->
+        <!--       />-->
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="@string/Name"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold"
+            app:textAllCaps="false"
+            />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_d_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:background="@drawable/curve_white_edittext"
+            android:inputType="textCapWords"
+            android:padding="@dimen/_5sdp"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="@color/black"
+            android:hint="@string/enter_name"
+            android:textColorHint="@color/black"
+            />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="@string/email"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold"
+            app:textAllCaps="false"
+            />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_d_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:background="@drawable/curve_white_edittext"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/_5sdp"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="@color/black"
+            android:hint="@string/enter_email"
+            android:textColorHint="@color/black"
+            />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/phone"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            app:textAllCaps="false"
+            />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_d_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:background="@drawable/curve_white_edittext"
+            android:hint="@string/enter_phone"
+            android:padding="@dimen/_5sdp"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:background="@drawable/curve_edittext"
+            android:backgroundTint="@color/toolbar_color"
+            android:text="Update"
+            android:textAllCaps="false"
+            android:textColor="@color/whitebtn"
+            android:textSize="@dimen/_12ssp"
+            />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_cancel"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:background="@drawable/curve_edittext"
+                android:backgroundTint="@color/toolbar_color"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/whitebtn"
+                android:textSize="@dimen/_12ssp"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

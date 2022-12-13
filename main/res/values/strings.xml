@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">HiralPractical</string>
+    <string name="Register">Register</string>
+    <string name="phone">Mobile No.</string>
+    <string name="enter_phone">Enter Mobile No</string>
+    <string name="email">Email</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="Name">Name</string>
+    <string name="enter_name">Enter Name</string>
+
+</resources>
